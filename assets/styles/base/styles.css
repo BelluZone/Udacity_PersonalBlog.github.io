@@ -1,0 +1,72 @@
+@import url(/assets/styles/pages/styles-landing.css);
+@import url(/assets/styles/pages/styles-post.css);
+@import url(/assets/styles/components/buttons.css);
+
+@font-face {
+    font-family: "Fred";
+    src: url(/assets/fonts/Fredoka-VariableFont_wdth\,wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0%;
+    font-family: "Fred", serif;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: minmax(150px, auto) 1fr;
+    grid-template-rows: minmax(10vh, auto) minmax(70vh, auto);
+    grid-template-areas:
+        "top top"
+        "mid-right mid-right"
+}
+
+h1 {
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+
+p {
+    letter-spacing: 0.025em;
+    line-height: 1.6;
+    font-size: 1.2em;
+}
+
+a {
+    display: contents;
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: top;
+    text-align: center;
+    padding: 0 5vw;
+    /* padding-left: 5vw;
+    padding-right: 5vw; */
+    background-color: #3a3636;
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 10vh;
+    background: #3a3636;
+    color: #e0e0e0;
+    padding: 50px 10% 50px;
+}
+
+#address {
+    text-decoration: none;
+    font-style: normal;
+    color: #e0e0e0;
+}

@@ -98,11 +98,11 @@ h3 {
     text-align: center;
 }
 
-h2{
+h2 {
     font-size: 2em;
     padding: 0 10% 0;
     align-self: center;
-    text-align: center; 
+    text-align: center;
 }
 
 @media(min-width:800px) {
